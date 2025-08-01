@@ -257,7 +257,7 @@ class BotHandler(BaseHTTPRequestHandler):
         else:
             self.send_error(404)
 
-def run_server(port=8000):
+def run_server(port=8081):
     server_address = ('', port)
     httpd = HTTPServer(server_address, BotHandler)
     print(f"🤖 GenAI Bot server starting on port {port}")

@@ -17,7 +17,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Expose port 8081 (like opening a window for visitors)
-EXPOSE 3000
+EXPOSE 8081
 
 # Command to run when container starts
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
