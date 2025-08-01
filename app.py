@@ -134,7 +134,7 @@ class BotHandler(BaseHTTPRequestHandler):
     </style>
 </head>
 <body>
-    <h1>GenAI assistant Bo</h1>
+    <h1>GenAI assistant Bot</h1>
     <div id="chat" class="chat-container"></div>
     <input type="text" id="messageInput" placeholder="Type your message here...">
     <button onclick="sendMessage()">Send</button>

@@ -7,14 +7,17 @@ WORKDIR /app
 # Copy requirements file first (this helps with faster rebuilds)
 COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Upgrade pip version
+RUN pip install --upgrade pip
+
+# Install dependencies
+RUN pip install -r requirements.txt
 
 # Copy your application code
 COPY . .
 
 # Expose port 8081 (like opening a window for visitors)
-EXPOSE 8081
+EXPOSE 3000
 
 # Command to run when container starts
-CMD ["python3", "app.py"]
+CMD ["python", "app.py"]
